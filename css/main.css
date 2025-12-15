@@ -1,0 +1,36 @@
+@import "modern-normalize.css";
+
+body {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    background-color: #0c0a09;
+    color: #fafaf9;
+    padding: 2rem;
+}
+
+a:has(button) {
+    text-decoration: none;
+}
+
+button {
+    color: #fafaf9;
+    padding: 0.5rem;
+    background-color: oklch(21.6% 0.006 56.043);
+    border-color: oklch(26.8% 0.007 34.298);
+    border-style: solid;
+    border-width: 0.125rem;
+    border-radius: 0.35rem;
+    cursor: pointer;
+    transition-duration: 150ms;
+    transition-property: background-color, border-color, box-shadow;
+    transition-timing-function: ease-in-out;
+    box-shadow: inset 0 0 6px 2px rgb(0 0 0 / 0.25);
+}
+
+button:hover {
+    background-color: #4f39f6;
+    border-color: #615fff;
+    box-shadow: inset 0 0 6px 2px rgb(0 0 0 / 0.25), 0 10px 15px -3px #4f39f6, 0 4px 6px -4px #4f39f6;
+}
