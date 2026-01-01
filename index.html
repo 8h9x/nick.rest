@@ -1,56 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <title>Nick Phillips</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css" />
-</head>
-<body>
-    <!--<nav>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Nick Phillips</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <!--<nav>
         <button>toggle theme</button>
         <button>scramble page</button>
     </nav>-->
-    <div>
-        <h1>Nick Phillips</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div>
-        <a href="https://github.com/8h9x" target="_blank">
-            <button>Github</button>
-        </a>
-        <a href="https://www.linkedin.com/in/nicholas-phillips-a3bbb3360/">
-            <button>Linkedin</button>
-        </a>
-        <a href="mailto:hi@nick.rest">
-            <button>hi@nick.rest</button>
-        </a>
-    </div>
-    <div>
-        <h2>Projects</h2>
         <div>
-            <img height="75px" src="https://media.discordapp.net/attachments/1434838053385408533/1448379680917950464/image.png?ex=693b0c31&is=6939bab1&hm=e6566d51e1c056a640f207aec083c660cd8a76b1bb53ec9c67065f34350a36aa&=&format=webp&quality=lossless&width=939&height=939" />
-            <div>
-                <h3>Slate</h3>
-                <span>Fortnite utility discord bot written in Go.</span>
-            </div>
+            <h1>Nick Phillips</h1>
+            <!--<p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>-->
         </div>
         <div>
-            <img height="75px" src="https://avatars.githubusercontent.com/u/99756068?s=400&u=64716dc010268648a67c64b3ad88015e211e4e3a&v=4" />
-            <div>
-                <h3>MK Chat</h3>
-                <span>Fortnite utility discord bot</span>
+            <a href="https://github.com/8h9x" target="_blank">
+                <button>Github</button>
+            </a>
+            <a href="https://www.linkedin.com/in/nicholas-phillips-a3bbb3360/">
+                <button>Linkedin</button>
+            </a>
+            <a href="mailto:8h9x@proton.me">
+                <button>8h9x@proton.me</button>
+            </a>
+        </div>
+        <div id="project-section">
+            <h2>Projects</h2>
+            <div id="project-list">
+                <div class="project-card">
+                    <img height="75px" src="images/blast.png" />
+                    <div>
+                        <h3>Blast!</h3>
+                        <span>Fortnite utility discord bot written in Go.</span>
+                        <a
+                            href="https://github.com/8h9x/BlastBot"
+                            target="_blank"
+                            >Github</a
+                        >
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div>
+                        <h3>fortgo</h3>
+                        <span
+                            >A Go library to interact with epic games
+                            apis.</span
+                        >
+                        <a href="https://github.com/8h9x/fortgo" target="_blank"
+                            >Github</a
+                        >
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img height="75px" src="images/ultrex.png" />
+                    <div>
+                        <h3>Cellkit (ultrex.io)</h3>
+                        <span
+                            >An open source agar.io-style game server
+                            implementation written in Go.
+                        </span>
+                        <a
+                            href="https://github.com/8h9x/CellKitServer"
+                            target="_blank"
+                            >Github</a
+                        >
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img height="75px" src="images/mkchat.png" />
+                    <div>
+                        <h3>MK Chat</h3>
+                        <span
+                            >Free chat website with discord server mirroring. No
+                            Sign-up required. Underlying services use swift, go,
+                            and js. Client is written using sveltekit.</span
+                        >
+                        <a href="https://github.com/mkchat-org" target="_blank"
+                            >Github</a
+                        >
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
-            <img height="75px" src="https://media.discordapp.net/attachments/1434838053385408533/1446530248517750794/image.png?ex=693ae946&is=693997c6&hm=db1d1206035805e6e1887e43fd9ea25d18a344a4d67c493d14c40164c4efa205&=&format=webp&quality=lossless&width=939&height=939" />
-            <div>
-                <h3>ultrex.io (Cellkit)</h3>
-                <span>An open source agar.io-style game server implementation written in Go. </span>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
