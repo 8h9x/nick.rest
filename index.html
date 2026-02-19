@@ -5,8 +5,12 @@
         <title>Nick Phillips</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
+        <!--<link
             href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+            rel="stylesheet"
+        />-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="css/main.css" />
@@ -16,9 +20,10 @@
         <button>toggle theme</button>
         <button>scramble page</button>
     </nav>-->
-        <div>
-            <h1>Nick Phillips</h1>
-            <!--<p>
+        <main>
+            <div>
+                <h1 id="name">Nick Phillips</h1>
+                <!--<p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -27,86 +32,201 @@
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>-->
-        </div>
-        <div>
-            <a href="https://github.com/8h9x" target="_blank">
-                <button>Github</button>
-            </a>
-            <a href="https://www.linkedin.com/in/nicholas-phillips-a3bbb3360/">
-                <button>Linkedin</button>
-            </a>
-            <a href="mailto:8h9x@proton.me">
-                <button>8h9x@proton.me</button>
-            </a>
-        </div>
-        <div id="project-section">
-            <h2>Projects</h2>
-            <div id="project-list">
-                <div class="project-card">
-                    <div>
-                        <h3>Ballad</h3>
-                        <span
-                            >A WIP cross-platform Swift GUI library based on the api surface of the be/haiku os application and interface kits.</span
+            </div>
+            <div>
+                <a href="https://github.com/8h9x" target="_blank">
+                    <button>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            viewBox="0 0 256 256"
                         >
-                        <a href="https://github.com/8h9x/Ballad" target="_blank"
-                            >Github</a
+                            <path
+                                d="M216,104v8a56.06,56.06,0,0,1-48.44,55.47A39.8,39.8,0,0,1,176,192v40a8,8,0,0,1-8,8H104a8,8,0,0,1-8-8V216H72a40,40,0,0,1-40-40A24,24,0,0,0,8,152a8,8,0,0,1,0-16,40,40,0,0,1,40,40,24,24,0,0,0,24,24H96v-8a39.8,39.8,0,0,1,8.44-24.53A56.06,56.06,0,0,1,56,112v-8a58.14,58.14,0,0,1,7.69-28.32A59.78,59.78,0,0,1,69.07,28,8,8,0,0,1,76,24a59.75,59.75,0,0,1,48,24h24a59.75,59.75,0,0,1,48-24,8,8,0,0,1,6.93,4,59.74,59.74,0,0,1,5.37,47.68A58,58,0,0,1,216,104Z"
+                            ></path>
+                        </svg>
+                        <span>Github</span>
+                    </button>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/nicholas-phillips-a3bbb3360/"
+                >
+                    <button>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="#ffffff"
+                            viewBox="0 0 256 256"
                         >
+                            <path
+                                d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140Z"
+                            />
+                        </svg>
+                        <span>Linkedin</span>
+                    </button>
+                </a>
+                <a href="mailto:8h9x@proton.me">
+                    <button>8h9x@proton.me</button>
+                </a>
+            </div>
+            <div id="project-section">
+                <h4>Projects</h4>
+                <div id="project-list">
+                    <div class="project-card">
+                        <div>
+                            <h2>Ballad</h2>
+                            <span
+                                >A cross-platform GUI library based on the api
+                                surface of the be/haiku os application and
+                                interface kits.</span
+                            >
+                            <ul class="tech-list">
+                                <li class="swift">Swift</li>
+                            </ul>
+                            <a
+                                href="https://github.com/8h9x/Ballad"
+                                target="_blank"
+                                >Github</a
+                            >
+                        </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <img height="75px" src="images/blast.png" />
-                    <div>
-                        <h3>Blast!</h3>
-                        <span>Fortnite utility discord bot written in Go.</span>
-                        <a
-                            href="https://github.com/8h9x/BlastBot"
-                            target="_blank"
-                            >Github</a
-                        >
+                    <div class="project-card">
+                        <!--<img height="75px" src="images/blast.png" />-->
+                        <div>
+                            <h2>Blast!</h2>
+                            <span
+                                >Fortnite utility discord bot using
+                                fortgo.</span
+                            >
+                            <!--<div style="display: inline">
+                            <span>Go</span>
+                            <span>|</span>
+                            <span>MongoDB</span>
+                        </div>-->
+                            <ul class="tech-list">
+                                <li class="go">Go</li>
+                                <li class="mongodb">MongoDB</li>
+                            </ul>
+                            <a
+                                href="https://github.com/8h9x/BlastBot"
+                                target="_blank"
+                                >Github</a
+                            >
+                        </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div>
-                        <h3>fortgo</h3>
-                        <span
-                            >A Go library to interact with epic games
-                            apis.</span
-                        >
-                        <a href="https://github.com/8h9x/fortgo" target="_blank"
-                            >Github</a
-                        >
+                    <div class="project-card">
+                        <!--<img height="75px" src="images/ultrex.png" />-->
+                        <div>
+                            <h2>Cellkit</h2>
+                            <span
+                                >An open source agar.io-style game server
+                                implementation.
+                            </span>
+                            <ul class="tech-list">
+                                <li class="go">Go</li>
+                            </ul>
+                            <div style="display: inline">
+                                <a
+                                    href="https://github.com/8h9x/CellKitServer"
+                                    target="_blank"
+                                    >Github</a
+                                >
+                                <!--<span>|</span>
+                                <a
+                                    href="https://cellkitdemo.nick.rest"
+                                    target="_blank"
+                                    >Demo</a
+                                >-->
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <img height="75px" src="images/ultrex.png" />
-                    <div>
-                        <h3>Cellkit (ultrex.io)</h3>
-                        <span
-                            >An open source agar.io-style game server
-                            implementation written in Go.
-                        </span>
-                        <a
-                            href="https://github.com/8h9x/CellKitServer"
-                            target="_blank"
-                            >Github</a
-                        >
+                    <div class="project-card">
+                        <div>
+                            <h2>fortgo</h2>
+                            <span
+                                >A library to interact with epic games
+                                apis.</span
+                            >
+                            <ul class="tech-list">
+                                <li class="go">Go</li>
+                            </ul>
+                            <a
+                                href="https://github.com/8h9x/fortgo"
+                                target="_blank"
+                                >Github</a
+                            >
+                        </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <img height="75px" src="images/mkchat.png" />
-                    <div>
-                        <h3>MK Chat</h3>
-                        <span
-                            >Free chat website with discord server mirroring. No
-                            Sign-up required. Underlying services use swift, go,
-                            and js. Client is written using sveltekit.</span
-                        >
-                        <a href="https://github.com/mkchat-org" target="_blank"
-                            >Github</a
-                        >
+                    <div class="project-card">
+                        <!--<img height="75px" src="images/grove.png" />-->
+                        <div>
+                            <h2>Grove</h2>
+                            <span
+                                >An OSS Apple Music player for windows, linux,
+                                and FreeBSD.</span
+                            >
+                            <ul class="tech-list">
+                                <li class="go">Go</li>
+                                <li class="gtk">GTK</li>
+                            </ul>
+                            <div style="display: inline">
+                                <a
+                                    href="https://github.com/8h9x/Grove"
+                                    target="_blank"
+                                    >Github</a
+                                >
+                                <!--<span>|</span>
+                                <a
+                                    href="https://github.com/8h9x/Grove/releases/tag/latest"
+                                    target="_blank"
+                                    >Download</a
+                                >-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <!--<img height="75px" src="images/mkchat.png" />-->
+                        <div>
+                            <h2>MK Chat</h2>
+                            <span
+                                >Messaging web app with discord server
+                                mirroring.</span
+                            >
+                            <!--<div style="display: inline">
+                            <span>Go</span>
+                            <span>|</span>
+                            <span>Swift</span>
+                            <span>|</span>
+                            <span>Javascript</span>
+                            <span>|</span>
+                            <span>Sveltekit</span>
+                        </div>-->
+                            <ul class="tech-list">
+                                <li class="go">Go</li>
+                                <li class="swift">Swift</li>
+                                <li class="js">Javascript</li>
+                                <li class="svelte">Svelte</li>
+                            </ul>
+                            <div style="display: inline">
+                                <a
+                                    href="https://github.com/mkchat-org"
+                                    target="_blank"
+                                    >Github</a
+                                >
+                                <!--<span>|</span>
+                                <a
+                                    href="https://mkchat.org?room=demo"
+                                    target="_blank"
+                                    >Demo</a
+                                >-->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>

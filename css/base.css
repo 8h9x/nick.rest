@@ -1,0 +1,75 @@
+html,
+:host {
+    font-family:
+        "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+}
+
+body {
+    font-weight: 600;
+    background-color: #0c0a09;
+    color: #fafaf9;
+    padding: 2rem;
+}
+
+a {
+    color: #615fff;
+    transition-duration: 150ms;
+    transition-property: color;
+    transition-timing-function: ease-in-out;
+}
+
+a:hover {
+    color: #4f39f6;
+}
+
+a:has(button) {
+    text-decoration: none;
+}
+
+button {
+    color: #fafaf9;
+    padding: 0.45rem 0.75rem;
+    background-color: oklch(21.6% 0.006 56.043);
+    border-color: oklch(26.8% 0.007 34.298);
+    border-style: solid;
+    border-width: 0.125rem;
+    border-radius: 0.35rem;
+    cursor: pointer;
+    transition-duration: 150ms;
+    transition-property: background-color, border-color, box-shadow;
+    transition-timing-function: ease-in-out;
+    box-shadow: inset 0 0 6px 2px rgb(0 0 0 / 0.25);
+}
+
+button:hover {
+    background-color: #4f39f6;
+    border-color: #615fff;
+    box-shadow:
+        inset 0 0 6px 2px rgb(0 0 0 / 0.25),
+        0 10px 15px -3px #4f39f6,
+        0 4px 6px -4px #4f39f6;
+}
+
+button svg {
+    display: inline-block;
+}
+
+button * {
+    vertical-align: middle;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}

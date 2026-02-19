@@ -1,52 +1,8 @@
-@import "modern-normalize.css";
+@import "tailwind-preflight.css";
+@import "base.css";
 
-body {
-    font-family: "Lora", serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-    background-color: #0c0a09;
-    color: #fafaf9;
-    padding: 2rem;
-}
-
-a {
-    color: #615fff;
-    transition-duration: 150ms;
-    transition-property: color;
-    transition-timing-function: ease-in-out;
-}
-
-a:hover {
-    color: #4f39f6;
-}
-
-a:has(button) {
-    text-decoration: none;
-}
-
-button {
-    color: #fafaf9;
-    padding: 0.5rem;
-    background-color: oklch(21.6% 0.006 56.043);
-    border-color: oklch(26.8% 0.007 34.298);
-    border-style: solid;
-    border-width: 0.125rem;
-    border-radius: 0.35rem;
-    cursor: pointer;
-    transition-duration: 150ms;
-    transition-property: background-color, border-color, box-shadow;
-    transition-timing-function: ease-in-out;
-    box-shadow: inset 0 0 6px 2px rgb(0 0 0 / 0.25);
-}
-
-button:hover {
-    background-color: #4f39f6;
-    border-color: #615fff;
-    box-shadow:
-        inset 0 0 6px 2px rgb(0 0 0 / 0.25),
-        0 10px 15px -3px #4f39f6,
-        0 4px 6px -4px #4f39f6;
+#name {
+    font-size: 2.5rem;
 }
 
 #project-section {
@@ -56,22 +12,50 @@ button:hover {
 }
 
 #project-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
+}
+
+@media only screen and (width >= 40rem) {
+    #project-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (width >= 48rem) {
+}
+
+@media only screen and (width >= 64rem) {
+    #project-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (width >= 80rem) {
+    #project-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (width >= 96rem) {
+    #project-list {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 
 #project-list .project-card {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-    width: 25%;
+    width: 100%;
     /*background-color: red;*/
 }
 
-#project-list .project-card * {
+/*#project-list .project-card * {
     margin: 0;
     padding: 0;
-}
+}*/
 
 #project-list .project-card img {
     height: 100px;
@@ -86,4 +70,80 @@ button:hover {
 
 #project-list .project-card a {
     width: fit-content;
+}
+
+ul.tech-list {
+    list-style-type: none;
+    gap: 0.25rem;
+    display: flex;
+    padding: 0;
+}
+
+ul.tech-list li {
+    display: inline-block;
+    color: #fafaf9;
+    padding: 0.125rem 0.45rem;
+    background-color: oklch(21.6% 0.006 56.043);
+    border-color: oklch(26.8% 0.007 34.298);
+    border-style: solid;
+    border-width: 0.125rem;
+    border-radius: 0.25rem;
+    transition-duration: 150ms;
+    transition-property: background-color, border-color, box-shadow;
+    transition-timing-function: ease-in-out;
+    box-shadow: inset 0 0 6px 2px rgb(0 0 0 / 0.25);
+}
+
+ul.tech-list li.go:hover {
+    background-color: #79d4fd;
+    border-color: #79d4fd;
+    box-shadow:
+        inset 0 0 6px 2px rgb(0 0 0 / 0.25),
+        0 1px 15px -3px #79d4fd,
+        0 4px 6px -4px #79d4fd;
+}
+
+ul.tech-list li.gtk:hover {
+    background-color: #6790bc;
+    border-color: #6790bc;
+    box-shadow:
+        inset 0 0 6px 2px rgb(0 0 0 / 0.25),
+        0 1px 15px -3px #6790bc,
+        0 4px 6px -4px #6790bc;
+}
+
+ul.tech-list li.js:hover {
+    background-color: #f0db4f;
+    border-color: #f0db4f;
+    box-shadow:
+        inset 0 0 6px 2px rgb(0 0 0 / 0.25),
+        0 1px 15px -3px #f0db4f,
+        0 4px 6px -4px #f0db4f;
+}
+
+ul.tech-list li.mongodb:hover {
+    background-color: #00ed64;
+    border-color: #00ed64;
+    box-shadow:
+        inset 0 0 6px 2px rgb(0 0 0 / 0.25),
+        0 1px 15px -3px #00ed64,
+        0 4px 6px -4px #00ed64;
+}
+
+ul.tech-list li.swift:hover {
+    background-color: #f05138;
+    border-color: #f05138;
+    box-shadow:
+        inset 0 0 6px 2px rgb(0 0 0 / 0.25),
+        0 1px 15px -3px #f05138,
+        0 4px 6px -4px #f05138;
+}
+
+ul.tech-list li.svelte:hover {
+    background-color: #ff3e00;
+    border-color: #ff3e00;
+    box-shadow:
+        inset 0 0 6px 2px rgb(0 0 0 / 0.25),
+        0 1px 15px -3px #ff3e00,
+        0 4px 6px -4px #ff3e00;
 }
