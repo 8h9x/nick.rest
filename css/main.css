@@ -46,8 +46,9 @@
 
 #project-list .project-card {
     display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.25rem;
     width: 100%;
     /*background-color: red;*/
 }
@@ -57,16 +58,16 @@
     padding: 0;
 }*/
 
-#project-list .project-card img {
+/*#project-list .project-card img {
     height: 100px;
     width: 100px;
-}
+}*/
 
-#project-list .project-card div {
+/*#project-list .project-card div {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-}
+}*/
 
 #project-list .project-card a {
     width: fit-content;
