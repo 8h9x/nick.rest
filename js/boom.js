@@ -15,7 +15,7 @@ function* getAllChildrenFlat(parent) {
  */
 const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
 
-function boom() {
+function deepShuffle() {
     for (const child of document.body.children) {
         child.append(...shuffle([...child.children]));
     }
